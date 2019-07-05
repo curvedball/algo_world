@@ -487,7 +487,7 @@ void HeapSort(int a[],int n)
 
 void print_info(int a[], int len)
 {
-	for (int i = 0; i < len; i++)
+	for (int i = 1; i < len; i++)
 	{
 		printf("%d ", a[i]);
 	}
@@ -498,7 +498,7 @@ void print_info(int a[], int len)
 int main()
 {
 	int i;
-	int a[10]={10, 30, 20, 40, 50, 60, 80, 90, 99, 45};
+	int a[10]={10000, 30, 20, 40, 50, 60, 80, 90, 99, 45}; //a[0] is unused!!!
 	print_info(a, 10);
 	//
     HeapSort(a, 9);
